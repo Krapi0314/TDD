@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    implementation 'io.lettuce:lettuce-core:6.2.0.RELEASE'
+    implementation 'com.googlecode.windowlicker:windowlicker-core:r268'
+    implementation 'com.googlecode.windowlicker:windowlicker-swing:r268'
+    testImplementation 'org.hamcrest:hamcrest:2.2'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testImplementation "org.junit.jupiter:junit-jupiter-params:5.4.2"
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+
+}
+
+test {
+    useJUnitPlatform()
+}
